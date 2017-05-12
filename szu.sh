@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Sketch Zip Unzip running"
+echo "Sketch Post Repo running"
 echo "------------------------"
 
 filename=$(echo $1 | cut -f 1 -d '.')
