@@ -28,6 +28,14 @@ function getCurrentDirectory (context) {
 	return context.document.fileURL().URLByDeletingLastPathComponent().path()
 }
 
+function getTheCurrentBranch (context) {
+	return cli(context, "git rev-parse --abbrev-ref HEAD");
+}
+
+function getTheCurrentRemote (context) {
+	return cli(context, "git ls-remote --get-url");
+}
+
 function szu(context, name) {
 	var docname = removeFileExtension(name);
 	cli(context, "mkdir -p ./" + docname);
