@@ -2,7 +2,7 @@
 
 var onRun = function (context) {
 	var doc = context.document;
-	szu(context, doc.displayName());
+	unzip(context, doc.displayName());
     cli(context, "open .");
 }
 
