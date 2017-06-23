@@ -18,6 +18,13 @@
       "identifier" : "sketch.post.repo.unzip"
     },
     {
+      "script": "app.js",
+      "handler": "onReload",
+      "shortcut" : "command shift r",
+      "name" : "Reload Sketch",
+      "identifier": "sketch.post.repo.reload"
+    },
+    {
       "script" : "app.js",
       "handler": "onGenerateIgnore",
       "shortcut" : "command shift i",

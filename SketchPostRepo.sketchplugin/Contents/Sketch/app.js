@@ -3,7 +3,6 @@
 var onRun = function (context) {
 	var doc = context.document;
 	unzip(context, doc.displayName());
-    cli(context, "open .");
 }
 
 var onGenerateIgnore = function (context) {
@@ -15,4 +14,9 @@ var onRepoInfo = function (context) {
         branch = getTheCurrentBranch(context),
         remote = getTheCurrentRemote(context);
     sketch.alert(remote,branch);
+}
+
+var onReload = function (context) {
+    var doc = context.document;
+    reloadSketch(context, doc.displayName());
 }
