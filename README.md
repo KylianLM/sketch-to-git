@@ -1,1 +1,2 @@
-sudo sh install.sh
+Inspired by
+https://github.com/mathieudutour/git-sketch-plugin

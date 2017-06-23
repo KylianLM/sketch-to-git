@@ -1,0 +1,25 @@
+{
+    "name" : "Sketch Post Repo",
+    "identifier" : "sketch.post.repo.plugin",
+    "version" : "0.1",
+    "description" : "Sketch Post Repo",
+    "authorEmail" : "kylian.le.mette@gmail.com",
+    "author" : "Le Mette Kylian",
+
+    "commands" : [
+    {
+      "script" : "app.js",
+      "handler" : "onRun",
+      "shortcut" : "command shift u",
+      "name" : "Unzip",
+      "identifier" : "sketch.post.repo.unzip"
+    },
+    {
+      "script" : "app.js",
+      "handler": "onGenerateIgnore",
+      "shortcut" : "command shift i",
+      "name" : "Generate Ignore File",
+      "identifier" : "sketch.post.repo.ignore"
+    }
+  ],
+}
