@@ -5,7 +5,10 @@
     "description" : "Sketch Post Repo",
     "authorEmail" : "kylian.le.mette@gmail.com",
     "author" : "Le Mette Kylian",
-
+    "homepage":"https://github.com/KylianLM/sketch-post-repo",
+    "downloadURL": "https://github.com/KylianLM/sketch-post-repo/downloads",
+    "updateURL": "https://github.com/KylianLM/sketch-post-repo/downloads",
+    "compatibleVersion": "3",
     "commands" : [
     {
       "script" : "app.js",
