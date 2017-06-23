@@ -36,10 +36,11 @@ function getTheCurrentRemote (context) {
 	return cli(context, "git ls-remote --get-url");
 }
 
-function szu(context, name) {
+function unzip(context, name) {
 	var docname = removeFileExtension(name);
-	cli(context, "mkdir -p ./" + docname);
-	cli(context, "unzip -o -a " + name + " -d ./" + docname);
+	cli(context, `cp ${name} ${docname}.zip`);
+	cli(context, `unzip -o ${docname}.zip -d ${docname} && rm -Rf ${docname}.zip`);
+	cli(context, `rm -Rf ${docname}/previews`);
 }
 
 
