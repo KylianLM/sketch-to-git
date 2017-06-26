@@ -17,6 +17,12 @@ var onRepoInfo = function (context) {
 }
 
 var onReload = function (context) {
-    var doc = context.document;
-    reloadSketch(context, doc.displayName());
+    var doc = context.document,
+    sketch = context.api();
+    var inputs = sketch.getSelectionFromUser("You confirm to reload ?", ["Yes"], 0);
+    if (inputs[0] != "1001") {
+        reloadSketch(context, doc.displayName());
+        [NSApp sendAction:'saveDocument:' to:nil from:doc]
+    }
+
 }

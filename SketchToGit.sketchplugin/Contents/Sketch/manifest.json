@@ -1,7 +1,7 @@
 {
     "name" : "Sketch To Git",
     "identifier" : "sketch.to.git.plugin",
-    "version" : "0.1",
+    "version" : "0.1.0",
     "description" : "Sketch To Git",
     "authorEmail" : "kylian.le.mette@gmail.com",
     "author" : "Le Mette Kylian",
@@ -20,8 +20,8 @@
     {
       "script": "app.js",
       "handler": "onReload",
-      "shortcut" : "command shift r",
-      "name" : "Reload Sketch",
+      "shortcut" : "command shift h",
+      "name" : "Directory to Sketch",
       "identifier": "sketch.to.git.reload"
     },
     {
