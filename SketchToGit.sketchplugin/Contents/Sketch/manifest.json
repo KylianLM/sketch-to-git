@@ -1,0 +1,42 @@
+{
+    "name" : "Sketch To Git",
+    "identifier" : "sketch.to.git.plugin",
+    "version" : "0.1.0",
+    "description" : "Sketch To Git",
+    "authorEmail" : "kylian.le.mette@gmail.com",
+    "author" : "Le Mette Kylian",
+    "homepage":"https://github.com/KylianLM/sketch-to-git",
+    "downloadURL": "https://github.com/KylianLM/sketch-to-git/downloads",
+    "updateURL": "https://github.com/KylianLM/sketch-to-git/downloads",
+    "compatibleVersion": "3",
+    "commands" : [
+    {
+      "script" : "app.js",
+      "handler" : "onRun",
+      "shortcut" : "command shift u",
+      "name" : "Unzip",
+      "identifier" : "sketch.to.git.unzip"
+    },
+    {
+      "script": "app.js",
+      "handler": "onReload",
+      "shortcut" : "command shift h",
+      "name" : "Directory to Sketch",
+      "identifier": "sketch.to.git.reload"
+    },
+    {
+      "script" : "app.js",
+      "handler": "onGenerateIgnore",
+      "shortcut" : "command shift i",
+      "name" : "Generate Ignore File",
+      "identifier" : "sketch.to.git.ignore"
+    },
+    {
+      "script": "app.js",
+      "handler": "onRepoInfo",
+      "shortcut": "command shift b",
+      "name": "Get repository information",
+      "identifier": "sketch.to.git.repo"
+    }
+  ],
+}

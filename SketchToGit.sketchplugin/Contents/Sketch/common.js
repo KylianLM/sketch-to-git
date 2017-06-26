@@ -43,4 +43,11 @@ function unzip(context, name) {
 	cli(context, `rm -Rf ${docname}/previews`);
 }
 
+function reloadSketch(context, name) {
+	var docname = removeFileExtension(name);
+	cli(context, `cd ${docname} && zip ${docname}.zip -r .`);
+	cli(context, `cd ${docname} && cp ${docname}.zip ../${docname}.sketch`);
+	cli(context, `rm -Rf ${docname}/${docname}.zip`);
+}
+
 
