@@ -1,13 +1,13 @@
 {
-    "name" : "Sketch Post Repo",
-    "identifier" : "sketch.post.repo.plugin",
+    "name" : "Sketch To Git",
+    "identifier" : "sketch.to.git.plugin",
     "version" : "0.1",
-    "description" : "Sketch Post Repo",
+    "description" : "Sketch To Git",
     "authorEmail" : "kylian.le.mette@gmail.com",
     "author" : "Le Mette Kylian",
-    "homepage":"https://github.com/KylianLM/sketch-post-repo",
-    "downloadURL": "https://github.com/KylianLM/sketch-post-repo/downloads",
-    "updateURL": "https://github.com/KylianLM/sketch-post-repo/downloads",
+    "homepage":"https://github.com/KylianLM/sketch-to-git",
+    "downloadURL": "https://github.com/KylianLM/sketch-to-git/downloads",
+    "updateURL": "https://github.com/KylianLM/sketch-to-git/downloads",
     "compatibleVersion": "3",
     "commands" : [
     {
@@ -15,28 +15,28 @@
       "handler" : "onRun",
       "shortcut" : "command shift u",
       "name" : "Unzip",
-      "identifier" : "sketch.post.repo.unzip"
+      "identifier" : "sketch.to.git.unzip"
     },
     {
       "script": "app.js",
       "handler": "onReload",
       "shortcut" : "command shift r",
       "name" : "Reload Sketch",
-      "identifier": "sketch.post.repo.reload"
+      "identifier": "sketch.to.git.reload"
     },
     {
       "script" : "app.js",
       "handler": "onGenerateIgnore",
       "shortcut" : "command shift i",
       "name" : "Generate Ignore File",
-      "identifier" : "sketch.post.repo.ignore"
+      "identifier" : "sketch.to.git.ignore"
     },
     {
       "script": "app.js",
       "handler": "onRepoInfo",
       "shortcut": "command shift b",
       "name": "Get repository information",
-      "identifier": "sketch.post.repo.repo"
+      "identifier": "sketch.to.git.repo"
     }
   ],
 }
