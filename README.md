@@ -1,15 +1,14 @@
 
 ## (WIP) Sketch To Git 
---------
+
 need Sketch 43+
 
 ### Install
-----
+
 Download Zip File, and double click on SketchToGit.sketchplugin.
 That's it
 
 ### Git
-----
 
 This plugin don't manage your git folder. You need to do this with CLI or GUI.
 
